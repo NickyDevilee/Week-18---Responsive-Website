@@ -1,0 +1,304 @@
+/*Nicky Devilee | 99047338
+Bol4 applicatieontwikkelaar
+Blok 2
+Week 18 - Responsive website / mobile first*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Archivo;
+}
+
+.info {
+	background-color: gold;
+	padding: 2rem 0 1rem 1rem;
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.drop-menu {
+	border: 1px solid white;
+	text-align: center;
+	padding: 1rem;
+	background-color: gold;
+	color: white;
+}
+
+.contact-fixed {
+	display: none;
+ 	overflow: auto;
+ 	z-index: 1;
+}
+
+.contact-fixed ul {
+	list-style-type: none;
+	padding: 0;
+	padding-top: 1rem;
+}	
+
+.header {
+	padding: 2rem;
+	padding-left: 1rem;
+	background-color: white;
+	height: 9rem;
+	position: relative;
+}
+
+.drop-menu-header {
+	border: 1px solid gray;
+	color: gray;
+	background-color: white;
+	padding: 1rem;
+	text-align: center;
+	float: left;
+	position: absolute;
+	top: 20%;
+}
+
+.header-image {
+	float: right;
+}
+
+.banner {
+	width: 100%;
+}
+
+.content {
+	width: 80%;
+	margin: 50% auto 0 auto;
+}
+
+nav {
+	display: none;
+}
+
+nav ul {
+	padding: 0;
+	margin-top: 6.5rem;
+}
+
+nav ul li {
+	list-style-type: none;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: gray;
+}
+
+nav ul li a:hover {
+	color: black;
+}
+
+.proefles {
+	margin-bottom: 20%;
+}
+							
+.proefles-button {
+	margin-top: 1rem;
+	background-color: gold;
+	border: 1px solid black;
+	width: 100%;
+	padding: 1rem;
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+.proefles-button:hover {
+	background-color: yellow;
+}
+
+.locaties {
+	margin-bottom: 20%;
+}
+
+.rijlessen {
+	margin-bottom: 20%;
+}
+
+.image-overlay {
+	display: none;
+}
+
+.video-div {
+	margin-bottom: 2rem;
+	height: 12rem;
+	width: 40rem;
+}
+
+.de-video {
+	width: 27rem;
+	height: 12rem;
+}
+
+footer {
+	background-color: gold;
+	text-align: center;
+}
+
+footer p {
+	margin: 0;
+	padding: 1rem;
+}
+
+.show {
+	display: block;
+}
+
+.content p{
+	margin-top: 1rem;
+}
+
+@media screen and (min-width: 64em) {
+ 	body {
+		margin: 0;
+		padding: 0;
+ 	}
+
+ 	.info {
+		background-color: gold;
+		width: 95%;
+		padding: 0 2rem 4rem 0;
+		position: relative;
+	}
+
+	.drop-menu {
+		display: none;
+	}
+
+	.info div ul {
+		display: block;
+		position: absolute;
+		right: 20%;
+		top: 20%;
+		z-index: 1;
+	}
+
+	.info div ul li {
+		display: inline-block;
+		margin-right: 3rem;
+	}
+
+	.contact-fixed {
+		background-color: gold;
+		display: block;
+		overflow: hidden;
+		position: fixed;
+		width: 100%;
+		height: 3rem;
+		padding: 1rem;
+		z-index: 1;
+		top: 0;
+		left: 0;
+	}
+
+	.header {
+		padding: 2rem;
+		background-color: white;
+		height: 9rem;
+		position: relative;
+	}
+
+	.drop-menu-header {
+		display: none;
+	}
+
+	.header-image {
+		float: left;
+	}
+
+	.banner {
+		position: absolute;
+		top: 60%;
+		right: 0;
+		width: 100%;
+	}
+
+
+	.content {
+		width: 80%;
+		margin: 38% auto 0 auto;
+		display: grid;
+		grid-template-columns: auto auto auto;
+	}
+
+	nav {
+		display: block;
+		float: right;
+		position: absolute;
+		top: -20%;
+		left: 30%;
+	}
+
+	nav ul {
+		position: static;
+		left: 0;
+		top: 1%;
+	}
+
+	nav ul li {
+		display: inline-block;
+	}
+
+	li a {
+		text-decoration: none;
+		margin-right: 3rem;
+		color: gray;
+	}
+
+	li a:hover {
+		color: black;
+	}
+
+	.proefles {
+		grid-column: 1;
+		width: 20rem;
+		margin-left: .6rem;
+	}
+								
+	.proefles-button {
+		background-color: gold;
+		width: 100%;
+		padding: 1rem;
+		font-weight: bold;
+		font-size: 1rem;
+	}
+
+	.locaties {
+		grid-column: 2;
+		width: 20rem;
+	}
+
+	.rijlessen {
+		grid-column: 3;
+		width: 20rem;
+	}
+
+	.video-div {
+		grid-column: 1 / 4;
+		width: 100%;
+		height: 30rem;
+		margin-bottom: 6rem;
+	}
+
+	.de-video {
+		height: 32rem;
+		width: 100%;
+	}
+
+	footer {
+		background-color: gold;
+	}
+
+	footer p {
+		margin: 0;
+		padding: 1rem;
+	}
+
+}
