@@ -97,11 +97,11 @@ nav ul li a:hover {
 }
 
 .proefles {
-	margin-bottom: 20%;
+	margin-bottom: 4rem;
 }
 							
 .proefles-button {
-	margin-top: 1rem;
+	margin-top: 2rem;
 	background-color: gold;
 	border: 1px solid black;
 	width: 100%;
@@ -115,11 +115,11 @@ nav ul li a:hover {
 }
 
 .locaties {
-	margin-bottom: 20%;
+	margin-bottom: 4rem;
 }
 
 .rijlessen {
-	margin-bottom: 20%;
+	margin-bottom: 4rem;
 }
 
 .image-overlay {
@@ -145,6 +145,7 @@ nav ul li a:hover {
 footer {
 	background-color: gold;
 	text-align: center;
+	margin-top: 2rem;
 }
 
 footer p {
